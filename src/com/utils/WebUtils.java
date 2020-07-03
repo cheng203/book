@@ -8,13 +8,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
 public class WebUtils {
-    public static void copyParamToBean(Map map, Object bean) {
+    public static <T> T copyParamToBean( Map value , T bean ){
         try {
-            BeanUtils.populate(bean, map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+            BeanUtils.populate(bean, value);
+        } catch (Exception e) {
             e.printStackTrace();
         }
+        return bean;
     }
 }

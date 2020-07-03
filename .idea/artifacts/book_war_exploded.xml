@@ -15,6 +15,7 @@
           <element id="library" level="application" name="taglibs-standard-spec-1.2.1" />
           <element id="library" level="project" name="taglibs-standard-impl-1.2.1" />
           <element id="library" level="project" name="commons-beanutils-1.8.0" />
+          <element id="library" level="project" name="taglibs-standard-impl-1.2.11" />
         </element>
       </element>
     </root>
